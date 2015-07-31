@@ -14,6 +14,10 @@
 		D9E625191B6A456F00AEB413 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E625181B6A456F00AEB413 /* Images.xcassets */; };
 		D9E6251C1B6A456F00AEB413 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E6251A1B6A456F00AEB413 /* LaunchScreen.xib */; };
 		D9E625281B6A456F00AEB413 /* BreakOutGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E625271B6A456F00AEB413 /* BreakOutGameTests.m */; };
+		D9E625331B6A533400AEB413 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E625321B6A533400AEB413 /* ball.png */; };
+		D9E625361B6ADC2D00AEB413 /* Brick.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E625351B6ADC2D00AEB413 /* Brick.m */; };
+		D9E6253C1B6AEF7800AEB413 /* background_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9E6253B1B6AEF7800AEB413 /* background_wallpaper.jpg */; };
+		D9E625401B6AF38500AEB413 /* pingpong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9E6253F1B6AF38500AEB413 /* pingpong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		D9E625211B6A456F00AEB413 /* BreakOutGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakOutGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E625261B6A456F00AEB413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9E625271B6A456F00AEB413 /* BreakOutGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakOutGameTests.m; sourceTree = "<group>"; };
+		D9E625321B6A533400AEB413 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		D9E625341B6ADC2D00AEB413 /* Brick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brick.h; sourceTree = "<group>"; };
+		D9E625351B6ADC2D00AEB413 /* Brick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brick.m; sourceTree = "<group>"; };
+		D9E6253B1B6AEF7800AEB413 /* background_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_wallpaper.jpg; sourceTree = "<group>"; };
+		D9E6253F1B6AF38500AEB413 /* pingpong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pingpong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,13 @@
 		D9E6250A1B6A456F00AEB413 /* BreakOutGame */ = {
 			isa = PBXGroup;
 			children = (
+				D9E625311B6A532700AEB413 /* image */,
 				D9E6250F1B6A456F00AEB413 /* AppDelegate.h */,
 				D9E625101B6A456F00AEB413 /* AppDelegate.m */,
 				D9E625121B6A456F00AEB413 /* ViewController.h */,
 				D9E625131B6A456F00AEB413 /* ViewController.m */,
+				D9E625341B6ADC2D00AEB413 /* Brick.h */,
+				D9E625351B6ADC2D00AEB413 /* Brick.m */,
 				D9E625151B6A456F00AEB413 /* Main.storyboard */,
 				D9E625181B6A456F00AEB413 /* Images.xcassets */,
 				D9E6251A1B6A456F00AEB413 /* LaunchScreen.xib */,
@@ -117,6 +129,16 @@
 				D9E625261B6A456F00AEB413 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9E625311B6A532700AEB413 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D9E6253F1B6AF38500AEB413 /* pingpong.mp3 */,
+				D9E6253B1B6AEF7800AEB413 /* background_wallpaper.jpg */,
+				D9E625321B6A533400AEB413 /* ball.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +223,10 @@
 			files = (
 				D9E625171B6A456F00AEB413 /* Main.storyboard in Resources */,
 				D9E6251C1B6A456F00AEB413 /* LaunchScreen.xib in Resources */,
+				D9E625401B6AF38500AEB413 /* pingpong.mp3 in Resources */,
+				D9E625331B6A533400AEB413 /* ball.png in Resources */,
 				D9E625191B6A456F00AEB413 /* Images.xcassets in Resources */,
+				D9E6253C1B6AEF7800AEB413 /* background_wallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E625141B6A456F00AEB413 /* ViewController.m in Sources */,
+				D9E625361B6ADC2D00AEB413 /* Brick.m in Sources */,
 				D9E625111B6A456F00AEB413 /* AppDelegate.m in Sources */,
 				D9E6250E1B6A456F00AEB413 /* main.m in Sources */,
 			);
